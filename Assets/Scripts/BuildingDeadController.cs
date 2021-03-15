@@ -28,7 +28,7 @@ public class BuildingDeadController : MonoBehaviour
         // TO DO: UI血条清零
     }
 
-    // 播放死亡动画
+    // 播放死亡动画及音效
     void Dead()
     {
         if (isDead)
