@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 111
+  controlID: 105
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,20 +365,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/DownloadedAssets/Surroundings/RPGPP_LT/Prefabs/Nature/Sky
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/DownloadedAssets/Surroundings/RPGPP_LT/Prefabs/Nature/Sky
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\bugs\DEMO\CarrotFantasy
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8e350000
-    m_LastClickedID: 13710
-    m_ExpandedIDs: 000000007e3500008035000082350000843500008635000000ca9a3b
+    scrollPos: {x: 0, y: 236}
+    m_SelectedIDs: 58390000
+    m_LastClickedID: 14680
+    m_ExpandedIDs: 0000000080350000823500008435000086350000883500008e3500009a3500009c350000a6350000b0350000563600004c39000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -406,7 +406,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007e35000080350000823500008435000086350000
+    m_ExpandedIDs: 000000008035000082350000843500008635000088350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -529,8 +529,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 96350000
-      m_LastClickedID: 0
+      m_SelectedIDs: 0c340000
+      m_LastClickedID: 13324
       m_ExpandedIDs: 66fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -591,9 +591,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 84.89684, y: 102.716324, z: 18.101456}
+    m_Target: {x: 235.98343, y: 109.13571, z: -3.113861}
     speed: 2
-    m_Value: {x: 84.89684, y: 102.716324, z: 18.101456}
+    m_Value: {x: 235.98343, y: 109.13571, z: -3.113861}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -639,13 +639,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.36501348, y: 0.027084637, z: -0.010622949, w: -0.93055785}
+    m_Target: {x: -0.29005197, y: -0.013781409, z: 0.0041841543, w: -0.956913}
     speed: 2
-    m_Value: {x: -0.36501348, y: 0.027084636, z: -0.010622949, w: -0.93055785}
+    m_Value: {x: -0.29147017, y: -0.016644316, z: 0.0050792126, w: -0.9564216}
   m_Size:
-    m_Target: 303.16037
+    m_Target: 262.48865
     speed: 2
-    m_Value: 303.16037
+    m_Value: 274.8572
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1031, y: 580}
+  m_TargetSize: {x: 1280, y: 720}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -713,16 +713,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 05000000000000000000000004000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -515.5
-    m_HBaseRangeMax: 515.5
-    m_VBaseRangeMin: -290
-    m_VBaseRangeMax: 290
+    m_HBaseRangeMin: -640
+    m_HBaseRangeMax: 640
+    m_VBaseRangeMin: -360
+    m_VBaseRangeMax: 360
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -742,7 +742,7 @@ MonoBehaviour:
       y: 21
       width: 1123
       height: 580
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 0.8055556, y: 0.8055556}
     m_Translation: {x: 561.5, y: 290}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -750,16 +750,16 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -561.5
-      y: -290
-      width: 1123
-      height: 580
+      x: -697.0345
+      y: -360
+      width: 1394.069
+      height: 720
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.8055556
   m_LastWindowPixelSize: {x: 1123, y: 601}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000100000100
+  m_LowResolutionForAspectRatios: 01000001000100000100
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &19
