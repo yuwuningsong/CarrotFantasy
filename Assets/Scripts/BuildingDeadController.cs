@@ -6,7 +6,9 @@ public class BuildingDeadController : MonoBehaviour
 {
     [SerializeField] int health = 0;                // 血量
     [SerializeField] bool isDead = false;           // 是否死亡
+    [SerializeField] float waitTime = 0f;           // 动画与音效播放与销毁房屋时间间隔
     [SerializeField] GameObject crackedBuilding = null;     // 废墟物体
+    [SerializeField] GameObject explosion = null;   // 爆炸特效
     
     // Start is called before the first frame update
     void Start()
@@ -34,10 +36,16 @@ public class BuildingDeadController : MonoBehaviour
         if (isDead)
         {
             Debug.Log("The building is DEAD!");
-            // TO DO: 播放2D动画效果
+            explosion.SetActive(true);
             // TO DO: 播放音效
-            gameObject.SetActive(false);
-            crackedBuilding.SetActive(true);
+            Invoke("Destroy", 1);
         }
+    }
+
+    // 销毁房屋
+    void Destroy()
+    {
+        gameObject.SetActive(false);
+        crackedBuilding.SetActive(true);
     }
 }

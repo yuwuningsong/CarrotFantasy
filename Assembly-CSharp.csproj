@@ -64,7 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DownloadedAssets\Parliment\_Creepy_Cat\3D Games Effects Pack Free\Example_02\InstanceExample.cs" />
     <Compile Include="Assets\Scripts\BuildingDeadController.cs" />
+    <None Include="Assets\DownloadedAssets\Parliment\_Creepy_Cat\3D Games Effects Pack Free\Example_02\Help Readme SOS.txt" />
+    <None Include="Assets\DownloadedAssets\Parliment\_Creepy_Cat\3D Games Effects Pack Free\_FAQ - Informations\Help Readme SOS.txt" />
     <Reference Include="UnityEngine">
       <HintPath>D:/软件/Unity/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
