@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\BuildingDeadController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\UIEventController.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <None Include="Assets\DownloadedAssets\Parliment\_Creepy_Cat\3D Games Effects Pack Free\Example_02\Help Readme SOS.txt" />
     <None Include="Assets\DownloadedAssets\Parliment\_Creepy_Cat\3D Games Effects Pack Free\_FAQ - Informations\Help Readme SOS.txt" />
     <Reference Include="UnityEngine">
@@ -614,14 +615,14 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/bugs/DEMO/CarrotFantasy/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/bugs/DEMO/CarrotFantasy/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/bugs/DEMO/CarrotFantasy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/bugs/DEMO/CarrotFantasy/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/bugs/DEMO/CarrotFantasy/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
