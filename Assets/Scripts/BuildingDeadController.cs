@@ -8,7 +8,7 @@ public class BuildingDeadController : MonoBehaviour
     [SerializeField] bool isDead = false;           // 是否死亡
     [SerializeField] GameObject crackedBuilding = null;     // 废墟物体
     [SerializeField] GameObject explosion = null;   // 爆炸特效
-    [SerializeField] AudioClip clip;                // 爆炸音效
+    [SerializeField] AudioClip clip = null;                // 爆炸音效
     
     // Start is called before the first frame update
     void Start()
@@ -46,6 +46,7 @@ public class BuildingDeadController : MonoBehaviour
     // 销毁房屋
     void Destroy()
     {
+        GameManager.gameManager.DestroyBuilding(this);
         gameObject.SetActive(false);
         crackedBuilding.SetActive(true);
     }

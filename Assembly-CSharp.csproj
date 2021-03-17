@@ -67,6 +67,8 @@
     <Compile Include="Assets\DownloadedAssets\Parliment\_Creepy_Cat\3D Games Effects Pack Free\Example_02\InstanceExample.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\BuildingDeadController.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\UIEventController.cs" />
     <None Include="Assets\DownloadedAssets\Parliment\_Creepy_Cat\3D Games Effects Pack Free\Example_02\Help Readme SOS.txt" />
     <None Include="Assets\DownloadedAssets\Parliment\_Creepy_Cat\3D Games Effects Pack Free\_FAQ - Informations\Help Readme SOS.txt" />
     <Reference Include="UnityEngine">
@@ -617,6 +619,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/bugs/DEMO/CarrotFantasy/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/bugs/DEMO/CarrotFantasy/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
