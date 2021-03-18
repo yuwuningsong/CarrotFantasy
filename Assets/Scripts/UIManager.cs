@@ -9,8 +9,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] Text monsterNumTotal = null;   // 总共的怪物波数UI文本
     [SerializeField] Slider slider = null;          // 清除的怪物条
 
-    public int MonsterNum { get { return 3; } set { } }         // 清除的怪物波数
-    public int MonsterNumTotal { get { return 15; } set { } }    // 总共的怪物波数
+    public int MonsterNum { get; set; }         // 清除的怪物波数
+    public int MonsterNumTotal { get; set; }    // 总共的怪物波数
 
     private void Awake()
     {
@@ -18,6 +18,6 @@ public class UIManager : MonoBehaviour
         monsterNumTotal.text = MonsterNumTotal.ToString();
 
         slider.maxValue = MonsterNumTotal;
-        slider.value = MonsterNum / MonsterNumTotal;
+        slider.value = MonsterNum;
     }
 }

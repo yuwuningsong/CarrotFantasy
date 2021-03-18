@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     {
         if (buildings.Count <= 0)
         {
+            // TO DO: 只调用一次
             Debug.Log("GameOver!");
             loseUI.SetActive(true);
         }

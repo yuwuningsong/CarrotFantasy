@@ -67,6 +67,7 @@
     <Compile Include="Assets\DownloadedAssets\Parliment\_Creepy_Cat\3D Games Effects Pack Free\Example_02\InstanceExample.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\BuildingDeadController.cs" />
+    <Compile Include="Assets\Scripts\BuildingHurtController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\UIEventController.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
