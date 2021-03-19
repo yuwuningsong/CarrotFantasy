@@ -7535,7 +7535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01105525dd9fb7d43999c40d72dcf378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
   isDead: 0
   crackedBuilding: {fileID: 1821449767}
   explosion: {fileID: 136639822}
@@ -8174,7 +8173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 0.01
+  m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0

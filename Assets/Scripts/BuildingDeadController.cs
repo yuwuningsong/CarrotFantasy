@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class BuildingDeadController : MonoBehaviour
 {
-    [SerializeField] int health = 0;                // 血量
     [SerializeField] bool isDead = false;           // 是否死亡
     [SerializeField] GameObject crackedBuilding = null;     // 废墟物体
     [SerializeField] GameObject explosion = null;   // 爆炸特效
     [SerializeField] AudioClip clip = null;                // 爆炸音效
     
+    private int health = 0;                // 血量
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class BuildingDeadController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        health = GetComponent<BuildingHurtController>().health;
         IsDead();
         Dead();
     }
