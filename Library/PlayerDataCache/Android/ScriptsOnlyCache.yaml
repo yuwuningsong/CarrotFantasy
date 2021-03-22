@@ -93,15 +93,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12634}
     - Class: 114
-      Script: {instanceID: 12664}
+      Script: {instanceID: 12662}
     - Class: 114
-      Script: {instanceID: 12766}
+      Script: {instanceID: 12764}
     - Class: 114
-      Script: {instanceID: 13124}
+      Script: {instanceID: 13122}
     - Class: 114
-      Script: {instanceID: 13142}
+      Script: {instanceID: 13140}
     - Class: 114
-      Script: {instanceID: 13156}
+      Script: {instanceID: 13154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -610,4 +610,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/01-Game.unity
-  playerPath: D:/bugs/DEMO/CarrotFantasy/AndroidAPK/CarrotFantasy.apk
+  playerPath: D:/bugs/DEMO/CarrotFantasy/AndroidAPK/CarrotFantasy v0.0.1.apk
