@@ -23,8 +23,10 @@ public class Monster : MonoBehaviour
             return;//怪物已经到达目标位置，游戏失败
 
         //两个位置相减得到移动方向,nomalized取得该方向的单位向量
-        transform.Translate((-positions[index].position + transform.position).normalized * Time.deltaTime * speed);
-        if(Vector3.Distance(positions[index].position, transform.position) < 0.2f)
+        Vector3 tmp = (positions[index].position - transform.position).normalized;
+        transform.Rotate(0, Vector3.Angle(transform.forward, tmp), 0);
+        transform.Translate(tmp * Time.deltaTime * speed, Space.World);
+        if (Vector3.Distance(positions[index].position, transform.position) < 0.2f)
         {
             index++;
         }
@@ -43,7 +45,6 @@ public class Monster : MonoBehaviour
             col.GetComponent<BuildingHurtController>().ReduceHealth();
             //GameObject.Instantiate(explosionEffectPrefab, transform.position, transform.rotation);
             Destroy(this.gameObject);
-
         }
     }
 }

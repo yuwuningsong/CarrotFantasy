@@ -11,7 +11,7 @@ public class WayPoints : MonoBehaviour//每个怪物生成时，可以通过static数组读取他
     {
         positions = new Transform[transform.childCount];
 
-        for(int i = 0; i <= positions.Length; i++)
+        for(int i = 0; i < positions.Length; i++)
         {
             positions[i] = transform.GetChild(i);
         }
