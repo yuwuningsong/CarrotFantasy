@@ -48,7 +48,7 @@ public class BuildingDeadController : MonoBehaviour
     // 销毁房屋
     void Destroy()
     {
-        GameManager.gameManager.DestroyBuilding(this);
+        GameManager.gameManager.DestroyBuilding(gameObject);
         gameObject.SetActive(false);
         crackedBuilding.SetActive(true);
     }

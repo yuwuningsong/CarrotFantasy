@@ -44,6 +44,7 @@ public class Monster : MonoBehaviour
         {
             col.GetComponent<BuildingHurtController>().ReduceHealth();
             //GameObject.Instantiate(explosionEffectPrefab, transform.position, transform.rotation);
+            GameManager.gameManager.DestroyMonster(gameObject);
             Destroy(this.gameObject);
         }
     }
