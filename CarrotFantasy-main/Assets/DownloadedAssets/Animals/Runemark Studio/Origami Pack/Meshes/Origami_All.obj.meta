@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 799f653f08c90c94c8b0126557609836
+timeCreated: 1531469011
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Crane_Cube.006
+    100002: Dog_Cube.005
+    100004: Dragon_Plane.002
+    100006: Goat_Cube.002
+    100008: Horse_Plane.001
+    100010: Monkey_Plane.003
+    100012: //RootNode
+    100014: Ox_Plane
+    100016: Pig_Cube.004
+    100018: Rabbit_Cube.003
+    100020: Rat_Cube.001
+    100022: Rooster_Plane.004
+    100024: Snake_Cone.002
+    100026: Tiger_Cube
+    400000: Crane_Cube.006
+    400002: Dog_Cube.005
+    400004: Dragon_Plane.002
+    400006: Goat_Cube.002
+    400008: Horse_Plane.001
+    400010: Monkey_Plane.003
+    400012: //RootNode
+    400014: Ox_Plane
+    400016: Pig_Cube.004
+    400018: Rabbit_Cube.003
+    400020: Rat_Cube.001
+    400022: Rooster_Plane.004
+    400024: Snake_Cone.002
+    400026: Tiger_Cube
+    2300000: Crane_Cube.006
+    2300002: Dog_Cube.005
+    2300004: Dragon_Plane.002
+    2300006: Goat_Cube.002
+    2300008: Horse_Plane.001
+    2300010: Monkey_Plane.003
+    2300012: Ox_Plane
+    2300014: Pig_Cube.004
+    2300016: Rabbit_Cube.003
+    2300018: Rat_Cube.001
+    2300020: Rooster_Plane.004
+    2300022: Snake_Cone.002
+    2300024: Tiger_Cube
+    3300000: Crane_Cube.006
+    3300002: Dog_Cube.005
+    3300004: Dragon_Plane.002
+    3300006: Goat_Cube.002
+    3300008: Horse_Plane.001
+    3300010: Monkey_Plane.003
+    3300012: Ox_Plane
+    3300014: Pig_Cube.004
+    3300016: Rabbit_Cube.003
+    3300018: Rat_Cube.001
+    3300020: Rooster_Plane.004
+    3300022: Snake_Cone.002
+    3300024: Tiger_Cube
+    4300000: Crane_Cube.006
+    4300002: Dog_Cube.005
+    4300004: Dragon_Plane.002
+    4300006: Goat_Cube.002
+    4300008: Horse_Plane.001
+    4300010: Monkey_Plane.003
+    4300012: Ox_Plane
+    4300014: Pig_Cube.004
+    4300016: Rabbit_Cube.003
+    4300018: Rat_Cube.001
+    4300020: Rooster_Plane.004
+    4300022: Snake_Cone.002
+    4300024: Tiger_Cube
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
