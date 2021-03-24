@@ -8,10 +8,11 @@ public class GameManager : MonoBehaviour
     
     [Header("List")]
     [SerializeField] List<GameObject> buildings = null;      // 房屋集合
-    [SerializeField] List<GameObject> monsters = null;                      // 怪物集合
+    [SerializeField] public List<GameObject> monsters = null;                      // 怪物集合
 
     [Header("UI")]
-    [SerializeField] GameObject loseUI = null;      // 失败界面
+    [SerializeField] GameObject overUI = null;      // 结束界面
+    public bool isWin = false;                      // 是否获胜
 
     [Header("Monster")]
     [SerializeField] GameObject monster01 = null;   // 怪物种类
@@ -22,9 +23,7 @@ public class GameManager : MonoBehaviour
 
     public int buildingHealth = 0;                  // 房屋当前血量
     public int healthTotal = 10;                     // 房屋总血量
-    public int monsterDes = 0;                       // 清除的怪物数
-
-    private int monsterNum = 0;                      // 已生成怪物数
+    public int monsterNum = 0;                      // 已生成怪物数
 
     private void Awake()
     {
@@ -42,7 +41,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         SyncHealth();
-        Lose();
+        GameOver();
         if (monsterNum >= monsterNumTotal) StopCoroutine("CreateMonster");
     }
 
@@ -58,14 +57,18 @@ public class GameManager : MonoBehaviour
         monsters.Remove(monster);
     }
 
-    // 游戏失败逻辑
-    void Lose()
+    // 游戏胜败逻辑
+    void GameOver()
     {
         if (buildings.Count <= 0)
         {
-            // TO DO: 只调用一次
-            Debug.Log("GameOver!");
-            loseUI.SetActive(true);
+            isWin = false;
+            overUI.SetActive(true);
+        }
+        else if (monsterNum > 0 && monsters.Count <= 0 && healthTotal > 0)
+        {
+            isWin = true;
+            overUI.SetActive(true);
         }
     }
 
@@ -99,4 +102,5 @@ public class GameManager : MonoBehaviour
             buildingHealth += building.GetComponent<BuildingHurtController>().health;
         }
     }
+
 }

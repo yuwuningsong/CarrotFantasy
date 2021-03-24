@@ -8,6 +8,14 @@ public class UIEventController : MonoBehaviour
 {
     [SerializeField] Button reset = null;           // 重玩本关按钮
     [SerializeField] Button backToMenu = null;      // 回到主菜单按钮
+    [SerializeField] GameObject loseUI = null;      // 失败文字
+    [SerializeField] GameObject winUI = null;       // 胜利文字
+
+    [Header("Star")]
+    [SerializeField] GameObject star01 = null;      // 星星1
+    [SerializeField] GameObject star02 = null;      // 星星2
+    [SerializeField] GameObject star03 = null;      // 星星3
+    [SerializeField] int starLevel = 0;             // 星星等级分界线
 
     private void Awake()
     {
@@ -47,5 +55,36 @@ public class UIEventController : MonoBehaviour
     {
         Debug.Log("Back To Menu!");
         // TO DO: 跳转至选关界面
+    }
+
+    // 胜败UI显示
+    void GameOver()
+    {
+        if(GameManager.gameManager.isWin)
+        {
+            winUI.SetActive(true);
+        }
+        else
+        {
+            loseUI.SetActive(true);
+        }
+    }
+
+    // 胜利时显示星星
+    void ShowStars()
+    {
+        if (GameManager.gameManager.isWin)
+        {
+            star01.SetActive(true);
+            float buildingHealth = gameObject.GetComponent<UIManager>().BuildingHealth;
+            if (buildingHealth <= starLevel && buildingHealth >= 0)
+            {
+                star02.SetActive(true);
+                if (buildingHealth == 0)
+                {
+                    star03.SetActive(true);
+                }
+            }
+        }
     }
 }
