@@ -7,6 +7,8 @@ public class Monster : MonoBehaviour
     public float speed = 10;
     private Transform[] positions;
     private int index = 0;
+    private int maxHp = 150;//最大血量
+    private int currentHp;//当前血量
 
     public GameObject explosionEffectPrefab;
 
@@ -14,6 +16,7 @@ public class Monster : MonoBehaviour
     void Start()
     {
         positions = WayPoints.positions;
+        maxHp = currentHp;
     }
 
     //移动
@@ -47,5 +50,30 @@ public class Monster : MonoBehaviour
             GameManager.gameManager.DestroyMonster(gameObject);
             Destroy(this.gameObject);
         }
+    }
+
+    //受到伤害
+    public void TakeDamage(int damage)
+    {
+        if (currentHp <= 0)
+        {
+            return;
+        }
+        else
+        {
+            currentHp -= damage;
+        }
+        if (currentHp <= 0)
+        {
+            Dead();
+        }
+    }
+
+    //怪物死亡
+    void Dead()
+    {
+        GameObject effect = GameObject.Instantiate(explosionEffectPrefab, transform.position, transform.rotation);
+        Destroy(effect, 1.5f);
+        Destroy(this.gameObject);
     }
 }
