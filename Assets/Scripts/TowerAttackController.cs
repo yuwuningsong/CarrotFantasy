@@ -8,14 +8,14 @@ public class TowerAttackController : MonoBehaviour
     public List<GameObject> monsters = new List<GameObject>();
     private void OnTriggerEnter(Collider col)
     {
-        if(col.tag == "monster")
+        if(col.CompareTag("monster"))
         {
             monsters.Add(col.gameObject);
         }
     }
     private void OnTriggerExit(Collider col)
     {
-        if (col.tag == "monster")
+        if (col.CompareTag("monster"))
         {
             monsters.Remove(col.gameObject);
         }

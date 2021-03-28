@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public int damage = 50;
-    public float speed = 20;
+    public float speed = 40;
     private Transform target;
 
     public void SetTarget(Transform _target)
@@ -17,5 +17,14 @@ public class Bullet : MonoBehaviour
     {
         transform.LookAt(target.position);
         transform.Translate(Vector3.forward*speed*Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("monster"))
+        {
+            collision.collider.gameObject.GetComponent<Monster>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }
