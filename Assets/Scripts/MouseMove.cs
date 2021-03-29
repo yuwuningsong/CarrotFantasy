@@ -6,11 +6,24 @@ using UnityEngine.UI;
 
 public class MouseMove : MonoBehaviour
 {
-
-    public void MoveImage()
+    public static Vector3 positionStart;
+    public void ClickImage()
     {
-        transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] myHit;
+        myHit = Physics.RaycastAll(ray);
+        for(int i=0;i<myHit.Length;i++)
+        {
+            RaycastHit hit = myHit[i];
+            Debug.Log(i+" "+hit.collider.gameObject.tag);
+            if(hit.collider.gameObject.tag=="Earth")
+            {
+                Debug.Log(hit.point);
+                positionStart = hit.point;
+            }
+        }        
     }
+
     /* public class ModelDrage : MonoBehaviour
      {
         private Camera cam;//发射射线的摄像机

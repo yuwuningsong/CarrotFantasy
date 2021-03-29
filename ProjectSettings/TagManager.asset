@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Building
   - monster
+  - Earth
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - 
   - bullet
   - monster
-  - 
-  - 
+  - MapCube
+  - Floor
   - 
   - 
   - 
