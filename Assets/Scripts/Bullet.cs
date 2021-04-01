@@ -5,18 +5,18 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public int damage = 50;
-    public float speed = 40;
-    private Transform target;
+    public float speed = 50;
+    private Vector3 target;
 
-    public void SetTarget(Transform _target)
+    public void SetTarget(Vector3 _target)
     {
         this.target = _target;   
     }
 
      void Update()
     {
-        transform.LookAt(target.position);
-        transform.Translate(Vector3.forward*speed*Time.deltaTime);
+        transform.LookAt(target);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision collision)

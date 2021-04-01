@@ -24,12 +24,17 @@ public class TowerAttackController : MonoBehaviour
     public int attackRateTime = 1;
     private float timer = 0;
     public GameObject bulletPrefab;
+    public GameObject emptyPrefab;
 
-    public Transform firePosition;
+    public Transform firePosition ;
 
     void Start()
     {
         timer = attackRateTime;
+        GameObject emptyObject = GameObject.Instantiate(emptyPrefab, this.transform.position, this.transform.rotation);
+        firePosition = emptyObject.transform;
+        firePosition.position = new Vector3(emptyObject.transform.position.x, emptyObject.transform.position.y + 7, emptyObject.transform.position.z);
+        Debug.Log("设置firePosition");
     }
 
 
@@ -41,12 +46,15 @@ public class TowerAttackController : MonoBehaviour
             timer -= attackRateTime;
             Attack();
         }
+        
+        
     }
 
     void Attack()
     {
        GameObject bullet = GameObject.Instantiate(bulletPrefab, firePosition.position, firePosition.rotation);
-        bullet.GetComponent<Bullet>().SetTarget(monsters[0].transform); 
+       // Vector3 TargetVector = new Vector3(monsters[0].transform.position.x, monsters[0].transform.position.y+3, monsters[0].transform.position.z);
+        bullet.GetComponent<Bullet>().SetTarget(new Vector3(monsters[0].transform.position.x, monsters[0].transform.position.y + 3, monsters[0].transform.position.z)); 
     }
 }
 
