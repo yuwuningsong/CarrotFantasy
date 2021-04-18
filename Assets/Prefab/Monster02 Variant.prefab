@@ -26,7 +26,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  explosionEffectPrefab: {fileID: 0}
+  maxHp: 150
+  currentHp: 150
+  explosionEffectPrefab: {fileID: 7490206629083987563, guid: 4d25b9cbd0544de4d97ce42243db3f1e,
+    type: 3}
 --- !u!1001 &8997929254969297908
 PrefabInstance:
   m_ObjectHideFlags: 0

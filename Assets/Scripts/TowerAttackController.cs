@@ -46,8 +46,8 @@ public class TowerAttackController : MonoBehaviour
             timer -= attackRateTime;
             Attack();
         }
-        
-        
+
+        if (monsters.Count != 0 && monsters[0].GetComponent<Monster>().IsDead) monsters.Remove(monsters[0]);
     }
 
     void Attack()

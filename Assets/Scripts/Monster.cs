@@ -7,16 +7,18 @@ public class Monster : MonoBehaviour
     public float speed = 10;
     private Transform[] positions;
     private int index = 0;
-    private int maxHp = 150;//最大血量
-    private int currentHp;//当前血量
+    [SerializeField] int maxHp = 150;//最大血量
+    [SerializeField] int currentHp = 150;//当前血量
 
     public GameObject explosionEffectPrefab;
+
+    public bool IsDead { get; set; }
 
     // Start is called before the first frame update
     void Start()
     {
         positions = WayPoints.positions;
-        maxHp = currentHp;
+        currentHp = maxHp;
     }
 
     //移动
@@ -39,6 +41,7 @@ public class Monster : MonoBehaviour
     void Update()
     {
         monsterAction();
+        if (IsDead) Dead();
     }
 
     private void OnTriggerEnter(Collider col)
@@ -57,15 +60,13 @@ public class Monster : MonoBehaviour
     {
         if (currentHp <= 0)
         {
+            IsDead = true;
             return;
         }
         else
         {
             currentHp -= damage;
-        }
-        if (currentHp <= 0)
-        {
-            Dead();
+            if (currentHp <= 0) IsDead = true;
         }
     }
 
@@ -74,6 +75,7 @@ public class Monster : MonoBehaviour
     {
         GameObject effect = GameObject.Instantiate(explosionEffectPrefab, transform.position, transform.rotation);
         Destroy(effect, 1.5f);
+        GameManager.gameManager.DestroyMonster(gameObject);
         Destroy(this.gameObject);
     }
 }
