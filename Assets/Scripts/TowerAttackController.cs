@@ -25,7 +25,6 @@ public class TowerAttackController : MonoBehaviour
     private float timer = 0;
     public GameObject bulletPrefab;
     public GameObject emptyPrefab;
-
     public Transform firePosition ;
 
     void Start()

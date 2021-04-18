@@ -15,7 +15,10 @@ public class Bullet : MonoBehaviour
 
      void Update()
     {
-        transform.LookAt(target);
+        Vector3 targetFar = target;
+        int n = 10000;
+        targetFar = target * (n + 1) - n * this.transform.position;
+        transform.LookAt(targetFar);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 

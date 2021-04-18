@@ -3712,7 +3712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 645e5faf2716d03418b5550b41027312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinNum: 0
+  coinNum: 300
 --- !u!4 &354961570
 Transform:
   m_ObjectHideFlags: 0
@@ -3721,7 +3721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354961568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 227.38705, y: -192.56483, z: 39.67569}
+  m_LocalPosition: {x: 235, y: -344, z: 191}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7255,20 +7255,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   craneData:
+    turretBeforeSet: {fileID: 8914602189040780555, guid: d4bd9f4bf87a2e2438bb81b060e03fb9,
+      type: 3}
     turretPrefab: {fileID: 1503180181874650, guid: b3b64fffd0a01784bba52106fbea62f1,
       type: 3}
-    cost: 0
+    cost: 60
     turretUpgradedPrefab: {fileID: 0}
     costUpgraded: 0
     type: 0
   goatData:
+    turretBeforeSet: {fileID: 0}
     turretPrefab: {fileID: 1749815345293910, guid: 4e58ae21638664c40b41bfceac2427a0,
       type: 3}
-    cost: 0
+    cost: 100
     turretUpgradedPrefab: {fileID: 0}
     costUpgraded: 0
-    type: 1
+    type: 2
   selectTurretData:
+    turretBeforeSet: {fileID: 0}
     turretPrefab: {fileID: 0}
     cost: 0
     turretUpgradedPrefab: {fileID: 0}

@@ -20,7 +20,7 @@ public class BuildManager : MonoBehaviour
         selectTurretData = craneData;
         if(TurretTemp==null)
         {
-            TurretTemp = GameObject.Instantiate(selectTurretData.turretPrefab, MouseMove.positionStart, Quaternion.identity);
+            TurretTemp = GameObject.Instantiate(selectTurretData.turretBeforeSet, MouseMove.positionStart, Quaternion.identity);
         }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit[] myHit;
@@ -32,16 +32,7 @@ public class BuildManager : MonoBehaviour
             {
                 TurretTemp.transform.position = hit.point;
             }
-        }
- /*       if (Physics.Raycast(ray, out myHit))
-        {
-            Debug.Log(myHit.collider);
-            if (myHit.collider.gameObject.tag == "Earth")
-            {
-                TurretTemp.transform.position = myHit.point;
-            }
-        }
-  */      
+        } 
     }
 
     
@@ -56,35 +47,32 @@ public class BuildManager : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
         {
-                Destroy(TurretTemp);
-                //开发炮台的建造
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
-                bool isColloder = Physics.Raycast(ray, out hit, 100000, LayerMask.GetMask("MapCube"));
-                if (isColloder)
+            Destroy(TurretTemp);
+            //开发炮台的建造
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            bool isColloder = Physics.Raycast(ray, out hit, 100000, LayerMask.GetMask("MapCube"));
+            if (isColloder)
+            {
+                MapCube mapCube = hit.collider.GetComponent<MapCube>();//得到点击的mapCube
+                if (mapCube.turretGo == null)
                 {
-                    MapCube mapCube = hit.collider.GetComponent<MapCube>();//得到点击的mapCube
-                    if (mapCube.turretGo == null)
-                    {
-                        //可以创建
-                        if (money >= selectTurretData.cost)
-                        {
-                            money -= selectTurretData.cost;
-                            mapCube.BuildTurret(selectTurretData.turretPrefab);
-                        }
-                        else
-                        {
-                            //TODO
-                        }
+                    //可以创建
+                    if (CoinManager.coinManager.UseCoins(selectTurretData.cost))
+                    {                        
+                        mapCube.BuildTurret(selectTurretData.turretPrefab);
                     }
                     else
                     {
-                        //TODO升级处理
+                        //TODO
                     }
                 }
-
-            
+                else
+                {
+                    //TODO升级处理
+                }
+                selectTurretData = null;
+            }
         }
-
     }
 }

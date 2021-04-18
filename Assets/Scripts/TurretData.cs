@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class TurretData 
 {
+    public GameObject turretBeforeSet;
     public GameObject turretPrefab;
     public int cost;
     public GameObject turretUpgradedPrefab;
@@ -15,5 +16,7 @@ public class TurretData
 public enum TurretType
 {
     crane,
-    goat
+    craneBeforeSet,
+    goat,
+    goatBeforeSet
 }
