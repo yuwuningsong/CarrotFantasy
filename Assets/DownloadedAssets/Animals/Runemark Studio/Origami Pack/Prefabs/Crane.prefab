@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1503180181874650
+--- !u!1 &8914602189040780555
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,13 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4408320134278776}
-  - component: {fileID: 33429257797339874}
-  - component: {fileID: 23990906282237678}
-  - component: {fileID: 9046418865603963456}
-  - component: {fileID: -8787662788577976971}
-  - component: {fileID: -1498903355789977311}
-  - component: {fileID: 5232255751847344434}
+  - component: {fileID: 8916556684325604521}
+  - component: {fileID: 8918415805589858355}
+  - component: {fileID: 8928223318150937663}
   m_Layer: 0
   m_Name: Crane
   m_TagString: Untagged
@@ -22,35 +18,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4408320134278776
+--- !u!4 &8916556684325604521
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503180181874650}
+  m_GameObject: {fileID: 8914602189040780555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.33}
+  m_LocalPosition: {x: 213.01476, y: -36881, z: 23687}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &33429257797339874
+--- !u!33 &8918415805589858355
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503180181874650}
+  m_GameObject: {fileID: 8914602189040780555}
   m_Mesh: {fileID: 4300000, guid: 799f653f08c90c94c8b0126557609836, type: 3}
---- !u!23 &23990906282237678
+--- !u!23 &8928223318150937663
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503180181874650}
+  m_GameObject: {fileID: 8914602189040780555}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,65 +79,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &9046418865603963456
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503180181874650}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.8680037
-  m_Height: 0.79006153
-  m_Direction: 1
-  m_Center: {x: 0.011192232, y: 0.39026526, z: 0}
---- !u!114 &-8787662788577976971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503180181874650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea8e5aa0e732b0f40aa81ea479566c1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monsters: []
-  attackRateTime: 1
-  bulletPrefab: {fileID: 1989542784876532220, guid: 3cd3b02b93253bb4296619b9fa9869cb,
-    type: 3}
-  emptyPrefab: {fileID: 8770642792231729884, guid: c1949baa8b3c52c4b8b3e19a999f8c85,
-    type: 3}
-  firePosition: {fileID: 0}
---- !u!135 &-1498903355789977311
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503180181874650}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 3
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &5232255751847344434
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503180181874650}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0

@@ -8,7 +8,7 @@ public class TowerAttackController : MonoBehaviour
     public List<GameObject> monsters = new List<GameObject>();
     private void OnTriggerEnter(Collider col)
     {
-        if(col.CompareTag("monster"))
+        if (col.CompareTag("monster"))
         {
             monsters.Add(col.gameObject);
         }
@@ -24,36 +24,60 @@ public class TowerAttackController : MonoBehaviour
     public int attackRateTime = 1;
     private float timer = 0;
     public GameObject bulletPrefab;
-    public GameObject emptyPrefab;
-    public Transform firePosition ;
+
+    public Transform firePosition;
+   
 
     void Start()
     {
         timer = attackRateTime;
-        GameObject emptyObject = GameObject.Instantiate(emptyPrefab, this.transform.position, this.transform.rotation);
-        firePosition = emptyObject.transform;
-        firePosition.position = new Vector3(emptyObject.transform.position.x, emptyObject.transform.position.y + 7, emptyObject.transform.position.z);
-        Debug.Log("设置firePosition");
     }
 
 
     void Update()
     {
         timer += Time.deltaTime;
-        if(monsters.Count >0 &&timer >= attackRateTime)
+        if (monsters.Count > 0 && timer >= attackRateTime)
         {
-            timer -= attackRateTime;
+            timer = 0;
             Attack();
         }
 
-        if (monsters.Count != 0 && monsters[0].GetComponent<Monster>().IsDead) monsters.Remove(monsters[0]);
+        
     }
 
     void Attack()
     {
-       GameObject bullet = GameObject.Instantiate(bulletPrefab, firePosition.position, firePosition.rotation);
-       // Vector3 TargetVector = new Vector3(monsters[0].transform.position.x, monsters[0].transform.position.y+3, monsters[0].transform.position.z);
-        bullet.GetComponent<Bullet>().SetTarget(new Vector3(monsters[0].transform.position.x, monsters[0].transform.position.y + 3, monsters[0].transform.position.z)); 
+        if (monsters[0] == null)
+        {
+            UpdateMonsters();
+        }
+        if (monsters.Count > 0)
+        {
+            GameObject bullet = GameObject.Instantiate(bulletPrefab, firePosition.position, firePosition.rotation);
+            bullet.GetComponent<Bullet>().SetTarget(monsters[0].transform.GetChild(2));
+        }
+        else
+        {
+            timer = attackRateTime;
+        }
+    }
+    
+
+    void UpdateMonsters()
+    {
+        List<int> emptyIndex = new List<int>();
+        for(int index = 0; index < monsters.Count; index++)
+        {
+            if (monsters[index] == null)
+            {
+                emptyIndex.Add(index);
+            }
+        }
+        for(int i = 0; i < emptyIndex.Count; i++)
+        {
+            monsters.RemoveAt(emptyIndex[i] - i);
+        }
     }
 }
 

@@ -9,6 +9,7 @@ public class Monster : MonoBehaviour
     private int index = 0;
     [SerializeField] int maxHp = 150;//最大血量
     [SerializeField] int currentHp = 150;//当前血量
+    public Transform targetPosition;
 
     public GameObject explosionEffectPrefab;
 
@@ -66,7 +67,11 @@ public class Monster : MonoBehaviour
         else
         {
             currentHp -= damage;
-            if (currentHp <= 0) IsDead = true;
+            if (currentHp <= 0)
+            {
+                IsDead = true;
+            }
+
         }
     }
 
