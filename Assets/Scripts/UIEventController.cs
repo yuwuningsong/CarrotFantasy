@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UIEventController : MonoBehaviour
 {
+    [Header("UI Management")]
     [SerializeField] Button reset = null;           // 重玩本关按钮
     [SerializeField] Button backToMenu = null;      // 回到主菜单按钮
     [SerializeField] GameObject loseUI = null;      // 失败文字
