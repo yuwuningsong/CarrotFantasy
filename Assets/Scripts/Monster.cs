@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
 
 public class Monster : MonoBehaviour
 {
     public float speed = 10;
     private Transform[] positions;
+    private Transform[] positions1;
+    private Transform[] positions2;
     private int index = 0;
     [SerializeField] int maxHp = 150;//最大血量
     [SerializeField] int currentHp = 150;//当前血量
@@ -18,13 +22,24 @@ public class Monster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        positions = WayPoints.positions;
+        positions1 = WayPoints_1.positions;
+        positions2 = WayPoints_2.positions;
         currentHp = maxHp;
+        System.Random rd = new System.Random();
+        if (rd.NextDouble() > 0.5)
+        {
+            positions = positions1;
+        }
+        else
+        {
+            positions = positions2;
+        }
     }
 
     //移动
     void monsterAction()
     {
+        
         if (index > positions.Length - 1)
             return;//怪物已经到达目标位置，游戏失败
 
