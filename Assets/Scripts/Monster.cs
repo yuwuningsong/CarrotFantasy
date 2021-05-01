@@ -93,8 +93,11 @@ public class Monster : MonoBehaviour
     //怪物死亡
     void Dead()
     {
-        GameObject effect = GameObject.Instantiate(explosionEffectPrefab, transform.position, transform.rotation);
+        // TO DO: 爆炸效果修改
+        GameObject effect = Instantiate(explosionEffectPrefab, transform.position, transform.rotation);
+        effect.SetActive(true);
         Destroy(effect, 1.5f);
+        gameObject.GetComponent<MonsterCoinController>().CreateCoins();
         GameManager.gameManager.DestroyMonster(gameObject);
         Destroy(this.gameObject);
     }

@@ -8,9 +8,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7120549444912457170}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 500
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -27,8 +27,20 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005458607
-  m_Center: {x: 0, y: 0.0008343163, z: 0.00037570955}
+  m_Radius: 0.0050764577
+  m_Center: {x: 0, y: 0.001216465, z: 0.00037570955}
+--- !u!114 &-6114605166530134302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7120549444912457170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03510c48788a4d64796369cea078c845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7121342423800329714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,7 +50,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1498403948531744, guid: fa2c57d3f28a5e6419393e8bc3eeb32a, type: 3}
       propertyPath: m_Name
-      value: GoldCoin
+      value: GoldCoin Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4244701375105762, guid: fa2c57d3f28a5e6419393e8bc3eeb32a, type: 3}
       propertyPath: m_LocalPosition.x

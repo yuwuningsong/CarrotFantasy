@@ -59,9 +59,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f7bc46a14c1ec641af0fb26780165ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinNum: 5
+  coinNum: 50
   coin: {fileID: 7120549444912457170, guid: 64c22b980a74611448d12d5958a248f4, type: 3}
-  coinNumVisible: 0
+  coinNumVisible: 10
 --- !u!1 &7090050930720612698
 GameObject:
   m_ObjectHideFlags: 0

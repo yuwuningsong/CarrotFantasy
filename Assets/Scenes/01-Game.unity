@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 13818399}
   m_Layer: 10
   m_Name: Cube (17)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 52193684}
   m_Layer: 10
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -725,6 +725,10 @@ PrefabInstance:
     - target: {fileID: 1498041528017854, guid: 0ba258545da721e488ecb71ffd143b6f, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_wood_path_01b
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498041528017854, guid: 0ba258545da721e488ecb71ffd143b6f, type: 3}
+      propertyPath: m_TagString
+      value: Earth
       objectReference: {fileID: 0}
     - target: {fileID: 4702229198241056, guid: 0ba258545da721e488ecb71ffd143b6f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1209,7 +1213,7 @@ GameObject:
   - component: {fileID: 131122190}
   m_Layer: 0
   m_Name: StartPoint
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1547,7 +1551,7 @@ GameObject:
   - component: {fileID: 177105701}
   m_Layer: 10
   m_Name: Cube (16)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1654,7 +1658,7 @@ GameObject:
   - component: {fileID: 179441388}
   m_Layer: 10
   m_Name: Cube (50)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1761,7 +1765,7 @@ GameObject:
   - component: {fileID: 186997761}
   m_Layer: 10
   m_Name: Cube (42)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1864,7 +1868,7 @@ GameObject:
   - component: {fileID: 205997508}
   m_Layer: 0
   m_Name: GameObject (8)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1898,7 +1902,7 @@ GameObject:
   - component: {fileID: 212531736}
   m_Layer: 10
   m_Name: Cube (39)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2150,6 +2154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 147.2
@@ -2319,7 +2327,7 @@ GameObject:
   - component: {fileID: 245151836}
   m_Layer: 0
   m_Name: Sky
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2358,7 +2366,7 @@ GameObject:
   - component: {fileID: 259362054}
   m_Layer: 10
   m_Name: Cube (33)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2673,6 +2681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 308780588}
+  - component: {fileID: 308780589}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Earth
@@ -2722,6 +2731,22 @@ Transform:
   m_Father: {fileID: 580216344}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &308780589
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308780587}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &311441957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2737,7 +2762,7 @@ GameObject:
   - component: {fileID: 311441959}
   m_Layer: 10
   m_Name: Cube (47)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2850,7 +2875,7 @@ GameObject:
   - component: {fileID: 317070480}
   m_Layer: 10
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2957,7 +2982,7 @@ GameObject:
   - component: {fileID: 322468992}
   m_Layer: 10
   m_Name: Cube (20)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3218,7 +3243,7 @@ GameObject:
   - component: {fileID: 333075171}
   m_Layer: 10
   m_Name: Cube (56)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3395,6 +3420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 273.5
@@ -3460,7 +3489,7 @@ GameObject:
   - component: {fileID: 346835574}
   m_Layer: 0
   m_Name: GameObject (2)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3633,7 +3662,7 @@ GameObject:
   - component: {fileID: 396336728}
   m_Layer: 10
   m_Name: Cube (28)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3780,7 +3809,7 @@ GameObject:
   - component: {fileID: 414168663}
   m_Layer: 10
   m_Name: Cube (23)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3974,7 +4003,7 @@ GameObject:
   - component: {fileID: 457385607}
   m_Layer: 10
   m_Name: Cube (55)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4087,7 +4116,7 @@ GameObject:
   - component: {fileID: 464329927}
   m_Layer: 10
   m_Name: Cube (25)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4190,7 +4219,7 @@ GameObject:
   - component: {fileID: 465897639}
   m_Layer: 0
   m_Name: GameObject (6)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4437,7 +4466,7 @@ GameObject:
   - component: {fileID: 497119367}
   m_Layer: 0
   m_Name: Path
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4468,8 +4497,8 @@ Transform:
   - {fileID: 929529895}
   - {fileID: 1276653216}
   - {fileID: 29284266}
-  - {fileID: 1290270052}
   - {fileID: 315956962}
+  - {fileID: 1290270052}
   m_Father: {fileID: 580216344}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4582,7 +4611,7 @@ GameObject:
   - component: {fileID: 503381240}
   m_Layer: 10
   m_Name: Cube (34)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4686,7 +4715,7 @@ GameObject:
   - component: {fileID: 504881520}
   m_Layer: 0
   m_Name: MapCube
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4900,7 +4929,7 @@ GameObject:
   - component: {fileID: 552038789}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5025,7 +5054,7 @@ GameObject:
   - component: {fileID: 580216344}
   m_Layer: 0
   m_Name: Map
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5222,7 +5251,7 @@ GameObject:
   - component: {fileID: 586913771}
   m_Layer: 10
   m_Name: Cube (44)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5424,7 +5453,7 @@ GameObject:
   - component: {fileID: 600962232}
   m_Layer: 10
   m_Name: Cube (43)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5601,6 +5630,10 @@ PrefabInstance:
     - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
       objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5833,7 +5866,7 @@ GameObject:
   - component: {fileID: 656418021}
   m_Layer: 0
   m_Name: GameObject (6)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6292,7 +6325,7 @@ GameObject:
   - component: {fileID: 694767741}
   m_Layer: 10
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6399,7 +6432,7 @@ GameObject:
   - component: {fileID: 705259502}
   m_Layer: 10
   m_Name: Cube (26)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6581,7 +6614,7 @@ GameObject:
   - component: {fileID: 718228340}
   m_Layer: 0
   m_Name: GameObject (4)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6712,7 +6745,7 @@ GameObject:
   - component: {fileID: 742986690}
   m_Layer: 10
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6898,7 +6931,7 @@ GameObject:
   - component: {fileID: 761534709}
   m_Layer: 10
   m_Name: Cube (30)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7076,6 +7109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01a (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1329638177129074, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4508691648621678, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 130.3
@@ -7229,7 +7266,7 @@ GameObject:
   - component: {fileID: 796311697}
   m_Layer: 10
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7561,6 +7598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b
       objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 112.9
@@ -7636,7 +7677,7 @@ GameObject:
   - component: {fileID: 849604774}
   m_Layer: 10
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7739,7 +7780,7 @@ GameObject:
   - component: {fileID: 877098543}
   m_Layer: 0
   m_Name: Rock
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7855,7 +7896,7 @@ GameObject:
   - component: {fileID: 921350290}
   m_Layer: 10
   m_Name: Cube (19)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8063,7 +8104,7 @@ GameObject:
   - component: {fileID: 936878722}
   m_Layer: 10
   m_Name: Cube (36)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8166,7 +8207,7 @@ GameObject:
   - component: {fileID: 948347148}
   m_Layer: 0
   m_Name: Animal
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8304,6 +8345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01a (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1329638177129074, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4508691648621678, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 95.5
@@ -8375,7 +8420,7 @@ GameObject:
   - component: {fileID: 986123274}
   m_Layer: 0
   m_Name: GameObject (3)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8591,7 +8636,7 @@ GameObject:
   - component: {fileID: 1074578387}
   m_Layer: 10
   m_Name: Cube (22)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8734,7 +8779,7 @@ GameObject:
   - component: {fileID: 1107071342}
   m_Layer: 10
   m_Name: Cube (29)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8841,7 +8886,7 @@ GameObject:
   - component: {fileID: 1109935239}
   m_Layer: 10
   m_Name: Cube (24)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9019,7 +9064,7 @@ GameObject:
   - component: {fileID: 1120849412}
   m_Layer: 0
   m_Name: GameObject (7)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9224,7 +9269,7 @@ GameObject:
   - component: {fileID: 1177129226}
   m_Layer: 10
   m_Name: Cube (48)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9462,7 +9507,7 @@ GameObject:
   - component: {fileID: 1187442066}
   m_Layer: 10
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9756,7 +9801,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1227829697
 GameObject:
@@ -9769,7 +9814,7 @@ GameObject:
   - component: {fileID: 1227829698}
   m_Layer: 0
   m_Name: GameObject (8)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9902,7 +9947,7 @@ GameObject:
   - component: {fileID: 1236681240}
   m_Layer: 10
   m_Name: Cube (37)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10004,6 +10049,10 @@ PrefabInstance:
     - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
       objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10174,7 +10223,7 @@ GameObject:
   - component: {fileID: 1253223665}
   m_Layer: 10
   m_Name: Cube (57)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10281,7 +10330,7 @@ GameObject:
   - component: {fileID: 1255049909}
   m_Layer: 10
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10384,6 +10433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 257.2
@@ -10459,7 +10512,7 @@ GameObject:
   - component: {fileID: 1262738278}
   m_Layer: 10
   m_Name: Cube (41)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10562,6 +10615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 319.4
@@ -10633,7 +10690,7 @@ GameObject:
   - component: {fileID: 1278766251}
   m_Layer: 0
   m_Name: GameObject (2)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10738,7 +10795,7 @@ GameObject:
   - component: {fileID: 1287716725}
   m_Layer: 0
   m_Name: GameObject (7)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10919,7 +10976,7 @@ GameObject:
   - component: {fileID: 1314941339}
   m_Layer: 10
   m_Name: Cube (31)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11026,7 +11083,7 @@ GameObject:
   - component: {fileID: 1335058183}
   m_Layer: 10
   m_Name: Cube (52)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11159,7 +11216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348737843171642, guid: 4e58ae21638664c40b41bfceac2427a0, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4348737843171642, guid: 4e58ae21638664c40b41bfceac2427a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11200,6 +11257,10 @@ PrefabInstance:
     - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
       objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11383,7 +11444,7 @@ GameObject:
   - component: {fileID: 1400048326}
   m_Layer: 10
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11869,7 +11930,7 @@ GameObject:
   - component: {fileID: 1440809674}
   m_Layer: 10
   m_Name: Cube (59)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12051,7 +12112,7 @@ GameObject:
   - component: {fileID: 1448792621}
   m_Layer: 10
   m_Name: Cube (27)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12158,7 +12219,7 @@ GameObject:
   - component: {fileID: 1467079012}
   m_Layer: 10
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12261,7 +12322,7 @@ GameObject:
   - component: {fileID: 1479688009}
   m_Layer: 0
   m_Name: WoodPath
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12716,7 +12777,7 @@ GameObject:
   - component: {fileID: 1564021524}
   m_Layer: 0
   m_Name: GameObject (4)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12778,6 +12839,10 @@ PrefabInstance:
     - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
       objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12854,7 +12919,7 @@ GameObject:
   - component: {fileID: 1577240027}
   m_Layer: 10
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12956,6 +13021,10 @@ PrefabInstance:
     - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
       objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13125,7 +13194,7 @@ GameObject:
   - component: {fileID: 1640278829}
   m_Layer: 0
   m_Name: GameObject (5)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13156,7 +13225,7 @@ GameObject:
   - component: {fileID: 1640688657}
   m_Layer: 0
   m_Name: WayPoints_2
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13212,7 +13281,7 @@ GameObject:
   - component: {fileID: 1642805554}
   m_Layer: 10
   m_Name: Cube (54)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13319,7 +13388,7 @@ GameObject:
   - component: {fileID: 1644159394}
   m_Layer: 10
   m_Name: Cube (40)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13532,7 +13601,7 @@ GameObject:
   - component: {fileID: 1660431977}
   m_Layer: 0
   m_Name: GameObject (3)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13566,7 +13635,7 @@ GameObject:
   - component: {fileID: 1661869037}
   m_Layer: 10
   m_Name: Cube (49)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13846,7 +13915,7 @@ GameObject:
   - component: {fileID: 1682262459}
   m_Layer: 10
   m_Name: Cube (58)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13953,7 +14022,7 @@ GameObject:
   - component: {fileID: 1697924349}
   m_Layer: 10
   m_Name: Cube (35)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14056,7 +14125,7 @@ GameObject:
   - component: {fileID: 1708579603}
   m_Layer: 0
   m_Name: GameObject (5)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14090,7 +14159,7 @@ GameObject:
   - component: {fileID: 1718578541}
   m_Layer: 10
   m_Name: Cube (51)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14369,6 +14438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 208.5
@@ -14511,7 +14584,7 @@ GameObject:
   - component: {fileID: 1813969656}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14821,7 +14894,7 @@ GameObject:
   - component: {fileID: 1847846462}
   m_Layer: 10
   m_Name: Cube (53)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14964,7 +15037,7 @@ GameObject:
   - component: {fileID: 1861351513}
   m_Layer: 10
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15114,7 +15187,7 @@ GameObject:
   - component: {fileID: 1888526214}
   m_Layer: 10
   m_Name: Cube (21)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15219,7 +15292,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888802353}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea8e5aa0e732b0f40aa81ea479566c1c, type: 3}
   m_Name: 
@@ -15333,7 +15406,7 @@ GameObject:
   - component: {fileID: 1896565659}
   m_Layer: 10
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15514,7 +15587,7 @@ GameObject:
   - component: {fileID: 1911629102}
   m_Layer: 10
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15617,7 +15690,7 @@ GameObject:
   - component: {fileID: 1915543929}
   m_Layer: 0
   m_Name: Wood
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15834,7 +15907,7 @@ GameObject:
   - component: {fileID: 1922219995}
   m_Layer: 0
   m_Name: StartPoint
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15874,7 +15947,7 @@ GameObject:
   - component: {fileID: 1937342431}
   m_Layer: 10
   m_Name: Cube (45)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16052,6 +16125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 336
@@ -16127,7 +16204,7 @@ GameObject:
   - component: {fileID: 1948825935}
   m_Layer: 10
   m_Name: Cube (46)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16455,7 +16532,7 @@ GameObject:
   - component: {fileID: 1975976631}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16486,7 +16563,7 @@ GameObject:
   - component: {fileID: 1976024402}
   m_Layer: 0
   m_Name: WayPoints_1
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16513,7 +16590,7 @@ Transform:
   - {fileID: 1227829698}
   - {fileID: 2133337382}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1976024402
 MonoBehaviour:
@@ -16621,7 +16698,7 @@ GameObject:
   - component: {fileID: 1987817082}
   m_Layer: 10
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16894,7 +16971,7 @@ GameObject:
   - component: {fileID: 2025350505}
   m_Layer: 0
   m_Name: GameObject (9)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17319,6 +17396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01b (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1740273473050372, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 290.4
@@ -17599,7 +17680,7 @@ GameObject:
   - component: {fileID: 2087074497}
   m_Layer: 10
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17701,6 +17782,10 @@ PrefabInstance:
     - target: {fileID: 1329638177129074, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01a (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329638177129074, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
+      propertyPath: m_TagString
+      value: Earth
       objectReference: {fileID: 0}
     - target: {fileID: 4508691648621678, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18104,7 +18189,7 @@ GameObject:
   - component: {fileID: 2133337382}
   m_Layer: 0
   m_Name: GameObject (9)
-  m_TagString: Untagged
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18133,6 +18218,10 @@ PrefabInstance:
     - target: {fileID: 1329638177129074, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
       propertyPath: m_Name
       value: rpgpp_lt_terrain_path_01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329638177129074, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
+      propertyPath: m_TagString
+      value: Earth
       objectReference: {fileID: 0}
     - target: {fileID: 4508691648621678, guid: a25996a7d0674de40a8273b54b50aa7b, type: 3}
       propertyPath: m_LocalPosition.x

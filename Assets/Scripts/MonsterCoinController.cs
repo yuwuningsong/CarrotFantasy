@@ -23,21 +23,14 @@ public class MonsterCoinController : MonoBehaviour
     }
 
     // 爆炸产生金币
-    void CreateCoins()
+    public void CreateCoins()
     {
         for (int i = 0; i < coinNumVisible; i++)
         {
+            GameObject c = Instantiate(coin, transform.position + new Vector3(Random.value * 10 - 5, Random.value * 10 - 5, 20), transform.rotation);
             coins.Add(Instantiate(coin, transform));
         }
         CoinManager.coinManager.AddCoins(coinNum);
     }
 
-    // 销毁金币
-    void DestroyCoins()
-    {
-        for (int i = 0; i < coinNumVisible; i++)
-        {
-            Destroy(coins[0]);
-        }
-    }
 }

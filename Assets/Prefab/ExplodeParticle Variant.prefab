@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100002, guid: f7efb0d9df2264096af57128df85dddb, type: 3}
       propertyPath: m_Name
-      value: ExplodeParticle
+      value: ExplodeParticle Variant
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: f7efb0d9df2264096af57128df85dddb, type: 3}
       propertyPath: m_IsActive
