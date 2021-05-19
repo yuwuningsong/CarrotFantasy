@@ -24,7 +24,7 @@ public class TowerAttackController : MonoBehaviour
     public int attackRateTime = 1;
     private float timer = 0;
     public GameObject bulletPrefab;
-
+    public Transform head;
     public Transform firePosition;
    
 
@@ -41,6 +41,12 @@ public class TowerAttackController : MonoBehaviour
         {
             timer = 0;
             Attack();
+        }
+        if (monsters.Count > 0 && monsters[0] != null)
+        {
+            Vector3 targetPosition = monsters[0].transform.position;
+            targetPosition.y = head.position.y;
+            head.LookAt(targetPosition );
         }
 
         

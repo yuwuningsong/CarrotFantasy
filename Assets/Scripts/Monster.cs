@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 
 public class Monster : MonoBehaviour
@@ -11,6 +12,8 @@ public class Monster : MonoBehaviour
     private Transform[] positions1;
     private Transform[] positions2;
     private int index = 0;
+   
+    public Slider hpSlider; //血条
     [SerializeField] int maxHp = 150;//最大血量
     [SerializeField] int currentHp = 150;//当前血量
     public Transform targetPosition;
@@ -82,6 +85,7 @@ public class Monster : MonoBehaviour
         else
         {
             currentHp -= damage;
+            hpSlider.value = (float)currentHp / maxHp;
             if (currentHp <= 0)
             {
                 IsDead = true;
