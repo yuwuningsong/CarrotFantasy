@@ -2,35 +2,108 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AudioManager
+    - BuildManager
     - BuildingDeadController
     - BuildingHurtController
+    - Bullet
+    - Coin
+    - CoinManager
     - GameManager
+    - MapCube
     - Monster
+    - MonsterCoinController
+    - MouseMove
+    - SceneController
+    - TowerAttackController
     - UIEventController
     - UIManager
-    - WayPoints
+    - WayPoints_1
+    - WayPoints_2
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Outline
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/00-On.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11256}
+    - Class: 114
+      Script: {instanceID: 11426}
+    - Class: 114
+      Script: {instanceID: 11466}
+    - Class: 114
+      Script: {instanceID: 11866}
+    - Class: 114
+      Script: {instanceID: 12104}
+    - Class: 114
+      Script: {instanceID: 12270}
+    - Class: 114
+      Script: {instanceID: 12786}
+    - Class: 114
+      Script: {instanceID: 13086}
+    - Class: 114
+      Script: {instanceID: 13146}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/01-Game.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -52,11 +125,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
@@ -71,42 +148,64 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11462}
+      Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11630}
+      Script: {instanceID: 11426}
     - Class: 114
-      Script: {instanceID: 11860}
+      Script: {instanceID: 11466}
     - Class: 114
-      Script: {instanceID: 11886}
+      Script: {instanceID: 11588}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 11636}
     - Class: 114
-      Script: {instanceID: 12262}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 12366}
+      Script: {instanceID: 11892}
     - Class: 114
-      Script: {instanceID: 12582}
+      Script: {instanceID: 12040}
     - Class: 114
-      Script: {instanceID: 12634}
+      Script: {instanceID: 12216}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12270}
     - Class: 114
-      Script: {instanceID: 12764}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 13122}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 13140}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 13154}
+      Script: {instanceID: 12382}
+    - Class: 114
+      Script: {instanceID: 12528}
+    - Class: 114
+      Script: {instanceID: 12600}
+    - Class: 114
+      Script: {instanceID: 12632}
+    - Class: 114
+      Script: {instanceID: 12654}
+    - Class: 114
+      Script: {instanceID: 12684}
+    - Class: 114
+      Script: {instanceID: 12786}
+    - Class: 114
+      Script: {instanceID: 13108}
+    - Class: 114
+      Script: {instanceID: 13146}
+    - Class: 114
+      Script: {instanceID: 13164}
+    - Class: 114
+      Script: {instanceID: 13190}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -127,6 +226,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -151,6 +256,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: bd444edf53dfa553187452be4e8b8b07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TowerAttackController
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -249,7 +360,13 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 6aab5b9deff9efd3f79b8a16d2d50f80
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseMove
+  - hash:
+      serializedVersion: 2
+      Hash: eff29f4babc010dd18112311d9b41bd8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -339,6 +456,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WayPoints_2
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -349,6 +472,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 9f1dcd77c5bb046364b81cc474d8ac43
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -363,6 +492,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Coin
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -375,10 +510,22 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: c62a451548102c8604702f7d5eb8d9e7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BuildManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: WayPoints
+    className: WayPoints_1
+  - hash:
+      serializedVersion: 2
+      Hash: 47b7fcbb178155114db76a428204bdb6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MapCube
   - hash:
       serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
@@ -441,6 +588,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 443d22bebdbedcc4634b707f87b7b62d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MonsterCoinController
+  - hash:
+      serializedVersion: 2
       Hash: d3b4d54ee4116bd58d5147788a8a9edc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -459,13 +612,19 @@ ScriptsOnlyBuild:
     className: AudioManager
   - hash:
       serializedVersion: 2
-      Hash: ee4b6d6ec49257e0d442ccfef55a3444
+      Hash: 999cc7d76e0c2d5e72bcfe56f8a5b386
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullet
+  - hash:
+      serializedVersion: 2
+      Hash: b343958573955338d0d86ff7b739725f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIManager
   - hash:
       serializedVersion: 2
-      Hash: 39e58d0f0c2862690f1a097fda234f6f
+      Hash: 96ff419b291a5a881ffbee788909fce9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIEventController
@@ -585,16 +744,16 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 109bd5c907da89261619cae5a6e70aa3
+      Hash: 40232d9f186f4c804ea390d4ec14dd5e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Monster
   - hash:
       serializedVersion: 2
-      Hash: 7072231382eb3c4871b3dd75ad0227e1
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Slider
+      Hash: 54a2a1e05ec01b2ce2dd093013c4571c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CoinManager
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -609,5 +768,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
+  - Assets/Scenes/00-On.unity
   - Assets/Scenes/01-Game.unity
-  playerPath: D:/bugs/DEMO/CarrotFantasy/AndroidAPK/CarrotFantasy v0.0.1.apk
+  playerPath: D:/bugs/DEMO/CarrotFantasy/AndroidAPK/CarrotFantasy v1.0.0.apk

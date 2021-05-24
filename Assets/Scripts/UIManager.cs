@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] Slider buildingHealth = null;  // 房屋摧毁度
 
     public int MonsterNum {                         // 清除的怪物波数
-        get => GameManager.gameManager.monsterNum - GameManager.gameManager.monsters.Count;
+        get => GameManager.gameManager.monsterDeadNum;
     }         
     public int MonsterNumTotal {                    // 总共的怪物波数
         get => GameManager.gameManager.monsterNumTotal;

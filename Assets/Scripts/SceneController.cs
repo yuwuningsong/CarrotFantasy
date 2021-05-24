@@ -30,6 +30,6 @@ public class SceneController : MonoBehaviour
     public void SelectLevel()
     {
         // TO DO: 选关逻辑
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

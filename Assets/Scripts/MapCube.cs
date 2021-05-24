@@ -10,5 +10,6 @@ public class MapCube : MonoBehaviour
     public void BuildTurret(GameObject turretPrefab)
     {
         turretGo = GameObject.Instantiate(turretPrefab,transform.position, Quaternion.identity);
+        turretGo.transform.position = new Vector3(transform.position.x, 10, transform.position.z);
     }
 }

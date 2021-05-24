@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public int buildingHealth = 0;                  // 房屋当前血量
     public int healthTotal = 10;                     // 房屋总血量
     public int monsterNum = 0;                      // 已生成怪物数
+    public int monsterDeadNum = 0;                  // 怪物死亡数量
 
     private void Awake()
     {
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
     // 怪物摧毁删除
     public void DestroyMonster(GameObject monster)
     {
+        if (monster.GetComponent<Monster>().IsDead) monsterDeadNum++;
         monsters.Remove(monster);
     }
 

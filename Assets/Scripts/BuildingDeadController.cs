@@ -40,7 +40,7 @@ public class BuildingDeadController : MonoBehaviour
             Debug.Log("The building is DEAD!");
             explosion.SetActive(true);
             // TO DO: 修改更好的3D音效播放
-            AudioManager.audioManager.PlayAudio(clip, new Vector3(220, 127, -225)/*gameObject.transform.position*/);
+            AudioManager.audioManager.PlayAudio(clip, new Vector3(220, 127, -220)/*gameObject.transform.position*/);
             Destroy();
         }
     }

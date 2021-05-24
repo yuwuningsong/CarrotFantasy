@@ -47,7 +47,7 @@ public class UIEventController : MonoBehaviour
     {
         Debug.Log("Reset Level!");
         // TO DO: 重新加载本关
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Time.timeScale = 1;
     }
 
@@ -55,6 +55,7 @@ public class UIEventController : MonoBehaviour
     void BackToMenu()
     {
         Debug.Log("Back To Menu!");
+        SceneManager.LoadScene(0);
         // TO DO: 跳转至选关界面
     }
 

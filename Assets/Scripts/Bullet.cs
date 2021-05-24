@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public int damage = 20;
     public float speed = 40;
+    public AudioClip clip = null;
     private Transform target;
 
     public void SetTarget(Transform _target)
@@ -30,6 +31,7 @@ public class Bullet : MonoBehaviour
         if (collision.collider.CompareTag("monster"))
         {
             collision.collider.gameObject.GetComponent<Monster>().TakeDamage(damage);
+            AudioManager.audioManager.PlayAudio(clip, new Vector3(220, 127, -220)/*gameObject.transform.position*/);
             Destroy(gameObject);
         }
     }

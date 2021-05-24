@@ -7,6 +7,7 @@ public class MonsterCoinController : MonoBehaviour
     [SerializeField] int coinNum = 0;
     [SerializeField] GameObject coin = null;
     [SerializeField] int coinNumVisible = 0;
+    [SerializeField] AudioClip clip = null;
 
     private List<GameObject> coins = new List<GameObject>();
 
@@ -30,6 +31,7 @@ public class MonsterCoinController : MonoBehaviour
             GameObject c = Instantiate(coin, transform.position + new Vector3(Random.value * 10 - 5, Random.value * 10 - 5, 20), transform.rotation);
             coins.Add(Instantiate(coin, transform));
         }
+        AudioManager.audioManager.PlayAudio(clip, new Vector3(220, 127, -220));
         CoinManager.coinManager.AddCoins(coinNum);
     }
 
