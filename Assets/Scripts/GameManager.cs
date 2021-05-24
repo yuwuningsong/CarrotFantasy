@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
             isWin = false;
             overUI.SetActive(true);
         }
-        else if (monsterNum > 0 && monsters.Count <= 0 && healthTotal > 0)
+        else if (monsterNum >= monsterNumTotal && monsters.Count <= 0 && healthTotal > 0)
         {
             isWin = true;
             overUI.SetActive(true);
